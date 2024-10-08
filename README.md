@@ -10,44 +10,59 @@ git config user.email "email"
 ```
 
 ## Compiling and Running Java Programs
-Note that since the shape classes are separate classes, you will need to compile ALL the files (at least one time).  You can do this by running
-```
-javac *.java
-```
-The star means to compile every file that is a Java file type.
-
 Run your code by running
 ```
-java Main.java
+javac Filename.java
+java Filename
 ```
 
-After you compile the shape classes, you only need to compile and run `Main.java` as usual.
-
 ## Problem 1
-Write code that takes input from the user for the radius (double) of a circle, and create a circle with that radius. The program should then print a sentence with the circumference and area of the circle. You should use the appropriate `Circle` methods to obtain the circumference and area of the circle rather than calculating these values yourself.
+Debug the code provided in the starter file so it does the following:
+
+* creates an int with the maximum possible value
+* increases this int by 1
+* prints the result
+* creates an int with the minimum possible value
+* decreases this int by 1
+* prints the result
+
+## Problem 2
+Debug the code provided in the starter file so it does the following:
+
+* creates two `Integer` objects x and y
+* sets x and y to inputs entered by the user
+* finds the average of the two values and stores this in a `Double` value `avg`
+* prints a sentence as shown in the sample run with the values of x, y and the average
 
 Sample run:
 ```
-Enter the radius of the circle:
-> 3
-A circle with a radius of 3.0 has a circumference of 18.84955592153876 and an area of 28.274333882308138
+Enter values:
+>5
+>12
+Average of 5 and 12 is 8.5
 ```
-Hint: You can approach this problem by saving the double (radius) as a variable and then creating the Circle, or you can create the Circle and use methods from the Circle class to set the radius.
 
-## Problem 2
-Write code that takes an integer input and a double input from the user, and creates a `RegularPolygon` object where the integer is the number of sides and the double is the side length. The code should calculate the area of the `RegularPolygon`, print the area, then increment the number of sides of the `RegularPolygon` by two and print the new area.
+## Problem 3
+Debug the code provided in the starter file so it does the following:
+
+* creates an Integer object named sides
+* creates a Double object named length
+* gets inputs from the user for each of these objects
+* creates a RegularPolygon object p1, with the sides and length value
+* creates a second RegularPolygon, p2, with twice the side length of p1, and one more side than p1
+* prints the details and areas of p1 and p2 on separate lines
+
+Reference the sample run below to see what a run looks like when the code is running correctly.
 
 Sample run:
 ```
 Enter number of sides:
 > 4
-Enter the side length:
-> 5.6
-Area with 4 sides: 31.36
-Incrementing the number of sides by two
-Area with 6 sides: 81.47566998803998
+Enter side length:
+> 2.5
+The area of a square with side length 2.5 is: 6.250000000000001
+The area of a regular pentagon with side length 5.0 is: 43.01193501472417
 ```
-Hint: You can use either the `addSides` or `setNumSides` methods from the `RegularPolygon` class to increment the number of sides by 2.
 
 ## Sample Solutions
 ```java
